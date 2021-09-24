@@ -34,5 +34,13 @@ namespace StackQueue
                 temp=temp.next;
             }
         }
+        public void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is UnderFlow");
+            }
+            Console.WriteLine("{0} is on the top of Stack", this.top.data);
+        }
     }
 }
