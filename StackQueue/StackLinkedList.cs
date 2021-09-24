@@ -55,7 +55,7 @@ namespace StackQueue
         /// <summary>
         /// Method to delete the element in stack
         /// </summary>
-        public void Pop()
+        public void pop()
         {
             if (this.top == null)
             {
@@ -63,6 +63,14 @@ namespace StackQueue
             }
             Console.WriteLine("Item Popped is :" + this.top.data);
             this.top = top.next;
-        } 
+        }
+        public void isEmpty()
+        {
+            while (this.top != null)
+            {
+                peek();
+                pop();
+            }
+        }
     }
 }

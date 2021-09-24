@@ -15,8 +15,11 @@ namespace StackQueue
             Console.WriteLine("*******************************");
             stack.peek();
             Console.WriteLine("*******************************");
-            stack.Pop();
-            
+            stack.pop();
+            Console.WriteLine("*******************************");
+            stack.isEmpty();
+            stack.display();
+
 
         }
 
