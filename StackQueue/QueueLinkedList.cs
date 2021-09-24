@@ -24,7 +24,7 @@ namespace StackQueue
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} Element added in Queue" + node.data);
+            Console.WriteLine("Element added in Queue" + node.data);
         }
 
         public void Display()
@@ -39,6 +39,24 @@ namespace StackQueue
                 Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }         
+        }
+        /// <summary>
+        /// Method to Delete the element
+        /// </summary>
+        public void Dequeue()
+        {
+            if(this.head==null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+               while(this.head!=null)
+                {
+                    Console.WriteLine("Element Deleted " + head.data);
+                    head=head.next;
+                }
+            }
         }
     }
 }

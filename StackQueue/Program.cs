@@ -25,10 +25,9 @@ namespace StackQueue
             queue.Enqueue(30);
             queue.Enqueue(56);
             queue.Display();
-
-
-
+            Console.WriteLine("*******************************");
+            queue.Dequeue();
+           // queue.Display();
         }
-
     }
 }
