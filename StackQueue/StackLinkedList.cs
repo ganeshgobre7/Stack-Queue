@@ -42,5 +42,14 @@ namespace StackQueue
             }
             Console.WriteLine("{0} is on the top of Stack", this.top.data);
         }
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack UnderFlow");
+            }
+            Console.WriteLine("Item Popped is :" + this.top.data);
+            this.top = top.next;
+        } 
     }
 }
