@@ -7,7 +7,7 @@ namespace StackQueue
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME TO STACK AND QUEUE PROGRAM");
-            StackLinkedList<int> stack = new StackLinkedList<int>();
+            StackLinkedList<int> stack = new StackLinkedList<int>();//creating object 
             stack.push(70);
             stack.push(30);
             stack.push(56);
@@ -16,7 +16,7 @@ namespace StackQueue
             stack.peek();
             Console.WriteLine("*******************************");
             stack.Pop();
-            stack.display();
+            
 
         }
 

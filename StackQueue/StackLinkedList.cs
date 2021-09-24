@@ -11,6 +11,10 @@ namespace StackQueue
         {
             this.top = null;
         }
+        /// <summary>
+        /// Method to push the element in stack
+        /// </summary>
+        /// <param name="value"></param>
         public void push(Gtype value)
         {
             NodeStack<Gtype> node = new NodeStack<Gtype>(value);
@@ -25,6 +29,9 @@ namespace StackQueue
             this.top = node;
             Console.WriteLine("Pushed to Stack :" + value);
         }
+        /// <summary>
+        /// Method to display the element in Stack
+        /// </summary>
         public void display()
         {
             NodeStack<Gtype> temp = this.top;
@@ -34,6 +41,9 @@ namespace StackQueue
                 temp=temp.next;
             }
         }
+        /// <summary>
+        /// Method to remove the element without deleting
+        /// </summary>
         public void peek()
         {
             if (this.top == null)
@@ -42,6 +52,9 @@ namespace StackQueue
             }
             Console.WriteLine("{0} is on the top of Stack", this.top.data);
         }
+        /// <summary>
+        /// Method to delete the element in stack
+        /// </summary>
         public void Pop()
         {
             if (this.top == null)
